@@ -1,0 +1,15 @@
+{
+  "id": "repo-agent-extension",
+  "name": "Repo Agent Extension",
+  "description": "A runnable local-runtime plugin that gives an agent a local repo inspection tool.",
+  "tools": [
+    {
+      "name": "read_repo_snapshot",
+      "description": "Read a compact snapshot of a local repository tree.",
+      "schema": "schemas/read_repo_snapshot.schema.json",
+      "entrypoint": "python/read_repo_snapshot.py:run",
+      "argument_resolution": "passthrough"
+    }
+  ],
+  "required_permissions": []
+}
